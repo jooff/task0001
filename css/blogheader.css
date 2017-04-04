@@ -1,0 +1,44 @@
+.head {
+    width: 100%;
+    height: 80px;
+    background: purple;
+}
+
+.head .content {
+    width: 980px;
+    height: 70px;
+    margin: 0px auto;
+}
+
+.head .content .logo {
+    float: left;
+    color: white;
+    padding-top: 50px;
+    font-size: 24px;
+    font-family: 华文隶书;
+}
+
+.head .content ul {
+    font-family: 宋体;
+    margin: 0px 0px;
+    padding-top: 54px;
+    font-size: 14px;
+    float: right;
+    color: white;
+}
+
+.head .content ul li {
+    display: inline;
+    padding-left: 28px;
+}
+
+.head .github {
+    float: right;
+    margin-top: 46px;
+    margin-right: 10px;
+}
+
+.head a {
+    color: #fff;
+    text-decoration: none;
+}

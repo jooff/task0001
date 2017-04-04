@@ -1,0 +1,97 @@
+.banner-img {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    /*clear: both;*/
+}
+
+.banner .banner-text {
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    font-family: 宋体, serif;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.1) 75%,rgba(255,255,255,0) 100%);
+    width: 250px;
+    /*height: 300px;*/
+    left: 940px;
+    top: 380px;
+    position: absolute;
+}
+
+.banner-text p {
+    text-indent: 2em;
+    /*text-align: justify;*/
+    line-height: 150%;
+}
+
+.banner-text h3 {
+    margin-top: 0px;
+    margin-bottom: 14px;
+    text-align: right;
+}
+
+.photo ul {
+    padding-left: 155px;
+    margin-top: 20px;
+}
+
+.beauty {
+    margin-right: 40px;
+    float: left;
+    width: 320px;
+    background: white;
+}
+
+.beauty:hover {
+    -webkit-box-shadow: 0 0 10px 10px rgba(0, 0, 0, .1);
+}
+
+.beauty p {
+    text-indent: 2em;
+    padding: 0px 30px 15px 30px;
+    font-size: 12px;
+    line-height: 170%;
+}
+
+.love {
+    /*border-radius: 10px;*/
+    width: 300px;
+    height: 180px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#blog {
+    text-align: center;
+    background: #fff;
+    height: 500px;
+    clear: both;
+    margin-top: 420px;
+}
+
+#my {
+    width: 80px;
+    height: 80px;
+    margin-top: -50px;
+    border-radius: 50%;
+}
+
+#hi {
+    font-size: 20px;
+    margin-top: 50px;
+    font-family: "Century Gothic";
+}
+
+#description {
+    margin: 50px auto;
+    text-indent: 2em;
+    width: 300px;
+    font-size: 14px;
+}

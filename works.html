@@ -1,0 +1,512 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/blogheader.css">
+    <link rel="stylesheet" href="css/blogfooter.css">
+    <link rel="stylesheet" href="css/comman.css">
+    <style>
+        /* body 部分，主内容样式*/
+        .works {
+            margin: 15px auto;
+            width: 980px;
+            height: 1500px;
+            /*position: relative;*/
+        }
+
+        /*左半部分样式*/
+        .left {
+            float: left;
+            width: 690px;
+        }
+
+        /*右半部分样式*/
+        .right {
+            float: right;
+            width: 280px;
+        }
+
+        /*搜索框样式*/
+        .serch {
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            margin-bottom: 10px;
+            background: #ffffff;
+        }
+
+        /*搜索输入框*/
+        .serch .serch-text {
+            padding-left: 46px;
+            width: 180px;
+            height: 40px;
+            background: url("img/serch.png") left center no-repeat;
+            outline: none;
+            border: 2px solid #ddd;
+        }
+
+        .serch .submit {
+            color: #fff;
+            border: 1px solid #ddd;
+            outline: none;
+            height: 40px;
+            width: 50px;
+            margin-left: -5px;
+        }
+
+        /*输入框聚焦时样式*/
+        .serch input:focus + .submit {
+            border: 1px solid #000;
+        }
+
+        .serch .serch-text:focus {
+            border: 1px solid #000;
+        }
+
+        /*排行榜样式*/
+        .rank {
+            background: #fff;
+            box-sizing: border-box;
+            width: 100%;
+            font-size: 14px;
+            text-align: left;
+            padding: 15px;
+            float: right;
+        }
+
+        .rank p {
+            color: gray;
+            margin: 0;
+        }
+
+        .rank ol {
+            padding: 0;
+            list-style: none;
+        }
+
+        .rank ol li {
+            margin: 0;
+        }
+
+        .rank .rank-num {
+            background: purple;
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            color: white;
+            line-height: 22px;
+            text-align: center;
+            margin-top: 15px;
+            border-radius: 50%;
+        }
+
+        /*排行条样式*/
+        .rank .rankBox {
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: -4px;
+            width: 100px;
+            display: inline-block;
+            height: 16px;
+            border: 2px solid purple;
+        }
+
+        /*progressbar 样式*/
+        .rank .num1 {
+            margin-bottom: -4px;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background: purple;
+        }
+
+        .rank .num2 {
+            margin-bottom: -4px;
+            display: inline-block;
+            width: 80%;
+            height: 100%;
+            background: purple;
+        }
+
+        .rank .num3 {
+            margin-bottom: -4px;
+            display: inline-block;
+            width: 60%;
+            height: 100%;
+            background: purple;
+        }
+
+        .rank .num4 {
+            margin-bottom: -4px;
+            display: inline-block;
+            width: 40%;
+            height: 100%;
+            background: purple;
+        }
+
+        .rank .num5 {
+            margin-bottom: -4px;
+            display: inline-block;
+            width: 20%;
+            height: 100%;
+            background: purple;
+        }
+
+        /*左半部分 tab 栏样式*/
+        .work-header ul {
+            letter-spacing: -5px;
+        }
+
+        .work-header ul li {
+            background: #fff;
+            letter-spacing: normal;
+            font-size: 14px;
+            display: inline-block;
+            padding: 18px;
+        }
+
+        .work-header .un-visible {
+            border-bottom: 1px solid #dddddd;
+            border-top: 4px solid #A660B7;
+            border-right: 1px solid #ddd;
+        }
+
+        .work-header .work-visible {
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #fff;
+        }
+
+        .work-header .visible1 {
+            border-top: 4px solid yellow;
+        }
+
+        .work-header .visible2 {
+            border-top: 4px solid purple;
+        }
+
+        .work-header .visible3 {
+            border-top: 4px solid red;
+        }
+
+        .work-header .visible4 {
+            border-top: 4px solid blue;
+            border-right: none;
+        }
+
+        /*左半部分图文卡片栏样式*/
+        .work-cards {
+            background: #fff;
+            height: 800px;
+            padding: 20px;
+            color: #fff;
+            font-size: 12px;
+            font-family: 宋体,serif;
+        }
+
+        .work-card {
+            background: purple;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content p {
+            margin-left: 40px;
+        }
+
+        .card-content h3 {
+            margin-bottom: 5px;
+            margin-left: 40px;
+            margin-top: -25px;
+        }
+
+        .order {
+            width: 22px;
+            height: 22px;
+            display: block;
+            text-align: center;
+            line-height: 22px;
+            border-radius: 50%;
+            border: 1px solid #eee;
+        }
+
+        .card-lg {
+            width: 320px;
+        }
+
+        .img-lg {
+            width: 320px;
+        }
+
+        .card-nl {
+            margin-top: 10px;
+            width: 155px;
+        }
+
+        .img-nl {
+            width: 155px;
+            height: 155px;
+        }
+
+        .left-card {
+            float: left;
+        }
+
+        .left-left {
+            float: left;
+        }
+
+        .left-right {
+            float: right;
+            margin-left: 10px;
+        }
+
+        .right-card {
+            float: right;
+            margin-top: -10px;
+        }
+
+        .right-right {
+            float: right;
+        }
+
+        .right-left {
+            float: left;
+            margin-right: 10px;
+        }
+
+        /*more*/
+        .more-cards {
+            margin-top: 10px;
+            height: 50px;
+            width: 100%;
+            color: gray;
+            background: #fff;
+            text-align: center;
+        }
+
+        .more-cards img {
+            margin-bottom: -10px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body id="body">
+<!--头部-->
+<div class="head">
+    <a href="https://github.com/lmovse"><img class="github" src="img/icon-github.png"></a>
+    <div class="content">
+        <span class="logo">Hello World</span>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="article.html">文章</a></li>
+            <li><a href="works.html">作品</a></li>
+            <li><a href="about.html">关于</a></li>
+        </ul>
+    </div>
+</div>
+<!--内容部分-->
+<div class="works">
+    <!--左边布局，包括 tab 与其下面的图片文字卡片，还有加载更多等-->
+    <div class="left">
+        <!--Tab 栏-->
+        <div class="work-header">
+            <ul>
+                <li class="un-visible">ALL</li>
+                <li class="work-visible visible1">JavaScript Util Function</li>
+                <li class="work-visible visible2">UI Components</li>
+                <li class="work-visible visible3">FrameWork</li>
+                <li class="work-visible visible4">Applications</li>
+            </ul>
+        </div>
+        <!--图文卡片-->
+        <div class="work-cards">
+            <!--左半部分，包括一个占两份的大图-->
+            <div class="left-card">
+                <!--大图，占两份，左半部分第一张-->
+                <div class="work-card card-lg">
+                    <img src="img/mac.jpg" class="img-lg">
+                    <div class="card-content">
+                        <span class="order">J</span>
+                        <h3>这里是标题</h3>
+                        <p>今天起得比较晚了，感觉时间真的过得很快，再过十几天基础班就结束了，感觉自己接受知识的进度变得很慢了，不知道该如何改变一下</p>
+                    </div>
+                </div>
+                <!--正常图文卡片左半部分第一列-->
+                <div class="left-left">
+                    <div class="work-card card-nl">
+                        <img src="img/love.jpg" class="img-nl">
+                        <div class="card-content">
+                            <span class="order">J</span>
+                            <h3>这里是标题</h3>
+                            <p>感觉时间真的过得很快.不知道该如何改变一下</p>
+                        </div>
+                    </div>
+                    <div class="work-card card-nl">
+                        <img src="img/2.jpg" class="img-nl">
+                        <div class="card-content">
+                            <span class="order">J</span>
+                            <h3>这里是标题</h3>
+                            <p>今天起得比较晚了</p>
+                        </div>
+                    </div>
+                </div>
+                <!--左半部分第二列-->
+                <div class="left-right">
+                    <div class="work-card card-nl">
+                        <img src="img/love2.jpg" class="img-nl">
+                        <div class="card-content">
+                            <span class="order">J</span>
+                            <h3>这里是标题</h3>
+                            <p>不知道该如何改变一下</p>
+                        </div>
+                    </div>
+                    <div class="work-card card-nl">
+                        <img src="img/3.jpg" class="img-nl">
+                        <div class="card-content">
+                            <span class="order">J</span>
+                            <h3>这里是标题</h3>
+                            <p>不知道该如何改变一下,努力努力再努力，终有一天会成功的，加油！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右半部分卡片，大小都为正常大小-->
+            <div class="right-card">
+                <!--右半部分第一列-->
+                <div class="right-left">
+                    <div class="work-card card-nl">
+                        <img src="img/2.jpg" class="img-nl">
+                        <div class="card-content">
+                            <span class="order">J</span>
+                            <h3>这里是标题</h3>
+                            <p>感觉时间真的过得很快.不知道该如何改变一下</p>
+                        </div>
+                    </div>
+                    <div class="work-card card-nl">
+                        <img src="img/3.jpg" class="img-nl">
+                        <div class="card-content">
+                            <span class="order">J</span>
+                            <h3>这里是标题</h3>
+                            <p>感觉时间真的过得很快.不知道该如何改变一下</p>
+                        </div>
+                    </div>
+                    <div class="work-card card-nl">
+                        <img src="img/2.jpg" class="img-nl">
+                        <div class="card-content">
+                            <span class="order">J</span>
+                            <h3>这里是标题</h3>
+                            <p>想回到过去，试着让故事继续，至少不再让你离我而去</p>
+                        </div>
+                    </div>
+                </div>
+                <!--右半部分第二列-->
+                <div class="right-right">
+                    <div class="work-card card-nl">
+                        <img src="img/love.jpg" class="img-nl">
+                        <div class="card-content">
+                            <span class="order">J</span>
+                            <h3>这里是标题</h3>
+                            <p>一盏黄黄旧旧的灯，时间在旁闷不吭声，寂寞下手毫无分寸，不懂得轻重之分</p>
+                        </div>
+                    </div>
+                    <div class="work-card card-nl">
+                        <img src="img/love2.jpg" class="img-nl">
+                        <div class="card-content">
+                            <span class="order">J</span>
+                            <h3>这里是标题</h3>
+                            <p>沉默支撑跃过陌生，静静看着凌晨黄昏</p>
+                        </div>
+                    </div>
+                    <div class="work-card card-nl">
+                        <img src="img/3.jpg" class="img-nl">
+                        <div class="card-content">
+                            <span class="order">J</span>
+                            <h3>这里是标题</h3>
+                            <p>只要靠在一起就能感觉甜蜜</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-cards"><img src="img/more.png">点击加载更多</div>
+    </div>
+
+    <!--右边布局，包含搜索框以及下面的排行榜-->
+    <div class="right">
+        <!--搜索框-->
+        <form class="serch">
+            <input type="text" placeholder="Keywords" class="serch-text">
+            <input type="button" name="GO" value="GO" class="submit"/>
+        </form>
+        <!--排行榜-->
+        <div class="rank">
+            <p>人气排行榜</p>
+            <ol>
+                <li><span class="rank-num">1</span><span class="rankBox"><span class="num1"></span></span>ui tree</li>
+                <li><span class="rank-num">2</span><span class="rankBox"><span class="num2"></span></span>util.trim</li>
+                <li><span class="rank-num">3</span><span class="rankBox"><span class="num3"></span></span>app.todo</li>
+                <li><span class="rank-num">4</span><span class="rankBox"><span class="num4"></span></span>ui.tab</li>
+                <li><span class="rank-num">5</span><span class="rankBox"><span class="num5"></span></span>util.addClass
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
+<!--低栏部分-->
+<div class="footer">
+    <ul>
+        <li class="liline"><a href="index.html">首页</a></li>
+        <li class="liline"><a href="article.html">文章</a></li>
+        <li class="liline"><a href="works.html">作品</a></li>
+        <li class="liline"><a href="about.html">关于</a></li>
+    </ul>
+    <hr size="1px">
+    <div>
+        <ul>
+            <li class="lilineb">
+                <ul>
+                    <li class="first">学习资料</li>
+                    <li><a href="#">css 高级教程</a></li>
+                    <li>JavaScript 学习</li>
+                    <li>Node.js 高级应用</li>
+                    <li>Html 手册</li>
+                    <li>Java Web 完全解析</li>
+                </ul>
+            </li>
+            <li class="lilineb">
+                <ul>
+                    <li class="first">学习资料</li>
+                    <li>Css 高级教程</li>
+                    <li>JavaScript 学习</li>
+                    <li>Node.js 高级应用</li>
+                    <li>Html 手册</li>
+                    <li>Java Web 完全解析</li>
+                </ul>
+            </li>
+            <li class="lilineb">
+                <ul>
+                    <li class="first">学习资料</li>
+                    <li>Css 高级教程</li>
+                    <li>JavaScript 学习</li>
+                    <li>Node.js 高级应用</li>
+                    <li>Html 手册</li>
+                    <li>Java Web 完全解析</li>
+                </ul>
+            </li>
+            <li class="lilineb">
+                <ul>
+                    <li class="first">友情链接</li>
+                    <li>W3C school</li>
+                    <li>黑岩阅读</li>
+                    <li>Q点</li>
+                    <li>爱乐窝手游</li>
+                    <li>嘻哈中文网</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <p>版权信息</p>
+    <img src="img/icon-github.png" class="footer-github">
+</div>
+</body>
+</html>

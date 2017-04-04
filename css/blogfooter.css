@@ -1,0 +1,48 @@
+.footer {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    background: #000;
+}
+
+.footer ul {
+    padding: 15px;
+}
+
+.footer li {
+    padding-bottom: 10px;
+}
+
+.footer p {
+    padding-top: 100px;
+}
+
+.footer ul .first {
+    color: #eee;
+    margin-bottom: 50px;
+}
+
+.footer hr {
+    background: gray;
+    color: gray;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer-github {
+    margin-top: 30px;
+}
+
+.liline {
+    display: inline;
+    padding-left: 28px;
+}
+
+.lilineb {
+    display: inline-block;
+    margin-right: 100px;
+    padding: 0px;
+}

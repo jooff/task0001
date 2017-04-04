@@ -1,0 +1,437 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/blogheader.css">
+    <link rel="stylesheet" href="css/blogfooter.css">
+    <link rel="stylesheet" href="css/comman.css">
+    <style>
+       #blog .content {
+            width: 45px;
+            line-height: 35px;
+            height: 35px;
+            font-size: 14px;
+            background: #A660B7;
+        }
+
+       .lable {
+           color: white;
+           font-size: 14px;
+           text-align: center;
+           font-family: 华文行楷;
+           float: left;
+           margin-top: 25px;
+       }
+
+       .date {
+           background: purple;
+           width: 45px;
+           line-height: 35px;
+           height: 35px;
+       }
+
+        #blog .text {
+            margin-bottom: 10px;
+            font-size: 14px;
+            margin-left: 45px;
+            background: #fff;
+            color: #000;
+            padding: 15px;
+        }
+
+        #blog {
+            margin-top: 20px;
+            margin-left: 140px;
+            float: left;
+            width: 735px;
+            margin-bottom: 300px;
+        }
+
+        #blog p.title {
+            color: #A660B7;
+            margin-top: 0px;
+            padding-top: 0px;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        #blog p.articl {
+            text-indent: 2em;
+        }
+
+        #foot li {
+            margin-bottom: 0px;
+            text-align: center;
+            line-height: 40px;
+            float: left;
+            margin-left: 15px;
+            width: 60px;
+            height: 40px;
+            font-size: 14px;
+            color: #000;
+            background: #fff;
+        }
+
+        #foot .page {
+            width: 40px;
+        }
+
+        #foot li:hover {
+            background: #A660B7;
+        }
+
+        #foot {
+            margin-left: 90px;
+        }
+
+        #navigate {
+            margin-top: 20px;
+            margin-right: 185px;
+            float: right;
+            width: 280px;
+        }
+
+        .serch {
+            margin-bottom: 0px;
+            text-align: center;
+            padding: 20px;
+            background: #ffffff;
+        }
+
+        /*搜索输入框*/
+        .serch .serch-text {
+            padding-left: 46px;
+            width: 180px;
+            height: 40px;
+            background: url("img/serch.png") left center no-repeat;
+            outline: none;
+            border: 2px solid #ddd;
+        }
+
+        .serch .submit {
+            color: #fff;
+            border: 1px solid #ddd;
+            outline: none;
+            height: 40px;
+            width: 50px;
+            margin-left: -5px;
+        }
+
+        /*输入框聚焦时样式*/
+        .serch input:focus + .submit {
+            border: 1px solid #000;
+        }
+
+        .serch .serch-text:focus {
+            border: 1px solid #000;
+        }
+
+        .listbook {
+            margin-top: 10px;
+            background: #fff;
+        }
+
+        .listbook li:hover {
+            border-left: 5px solid purple;
+            cursor: pointer;
+        }
+
+        .non-active-item {
+            color: gray;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            border-left: 5px solid #A660B7;
+        }
+
+        .active-item {
+            color: gray;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            border-left: 5px solid purple;
+        }
+
+        .date-table {
+            padding: 25px;
+            margin-top: 10px;
+            background: #fff;
+        }
+
+        .date-table td {
+            color: gray;
+            text-align: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .date-table .left {
+            background: url("img/right.png") right center no-repeat;
+        }
+
+        .date-table .right {
+            background: url("img/left.png") left center no-repeat;
+        }
+
+        .date-table td:hover {
+            cursor: pointer;
+        }
+
+        .date-table .today {
+            background: purple;
+            color: #eee;
+        }
+
+        .date-table .year-month {
+            color: purple;
+        }
+
+        .tags {
+            margin-top: 10px;
+            padding: 15px;
+            background: #fff;
+        }
+
+        .tags span {
+            color: gray;
+        }
+
+        .tags .lg {
+            font-size: 30px;
+            font-weight: bold;
+            color: purple;
+        }
+
+        .tags .md-l {
+            font-size: 20px;
+            color: purple;
+        }
+
+        .tags .tag {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .tags .md {
+            font-size: 15px;
+            color: #A660B7;
+        }
+
+        .tags .sm {
+            color: #A660B7;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body id="body">
+<div class="head">
+    <a href="https://github.com/lmovse"><img class="github" src="img/icon-github.png"></a>
+    <div class="content">
+        <span class="logo">Hello World</span>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="#">文章</a></li>
+            <li><a href="works.html">作品</a></li>
+            <li><a href="about.html">关于</a></li>
+        </ul>
+    </div>
+</div>
+<div id="blog">
+    <ul>
+        <li>
+            <div class="lable">
+                <div class="date">3.21</div>
+                <div class="content">CSS</div>
+            </div>
+            <div class="text">
+                <p class="title">如果有来生</p>
+                <p class="articl">
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信<br/>富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信<br/>
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信<br/>富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信<br/>
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信<br/>
+                    富强爱国敬业文明和谐友善民主诚信
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="lable">
+                <div class="date">3.22</div>
+                <div class="content">Js</div>
+            </div>
+            <div class="text">
+                <p class="title">如果有来生</p>
+                <p class="articl">
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信<br/>
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信<br/>
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信
+                    富强爱国敬业文明和谐友善民主诚信
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="lable">
+                <div class="date">3.23</div>
+                <div class="content">Html</div>
+            </div>
+            <div class="text">
+                <p class="title">如果有来生</p>
+                <p class="articl">
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信<br/>
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信<br/>
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信
+                    富强爱国敬业文明和谐友善民主诚信富强爱国敬业文明和谐友善民主诚信
+                    富强爱国敬业文明和谐友善民主诚信
+                </p>
+            </div>
+        </li>
+    </ul>
+    <ul id="foot">
+        <li><a href="#" class="unvisible">第一页 </a></li>
+        <li><a href="#" class="unvisible">上一页</a></li>
+        <li class="page"><a href="#" class="visible">1</a></li>
+        <li class="page"><a href="#" class="visible">2</a></li>
+        <li class="page"><a href="#" class="visible">3</a></li>
+        <li class="page"><a href="#" class="visible">4 </a></li>
+        <li><a href="#" class="visible">...</a></li>
+        <li><a href="#" class="visible">下一页</a></li>
+        <li><a href="#" class="visible">最后页</a></li>
+    </ul>
+
+</div>
+<div id="navigate">
+    <form class="serch">
+        <input type="text" placeholder="Keywords" class="serch-text">
+        <input type="button" name="GO" value="GO" class="submit"/>
+    </form>
+    <div class="listbook">
+        <ul>
+            <li class="non-active-item">HTML</li>
+            <li class="active-item">CSS</li>
+            <li class="non-active-item">JavaScript</li>
+            <li class="non-active-item">其他文章</li>
+        </ul>
+    </div>
+
+    <div class="date-table">
+        <table>
+            <tr>
+                <td class="right"></td>
+                <td colspan="5" class="year-month">2017.04</td>
+                <td class="left"></td>
+            </tr>
+            <tr>
+                <td>M</td>
+                <td>T</td>
+                <td>W</td>
+                <td>T</td>
+                <td>F</td>
+                <td>S</td>
+                <td>S</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td class="today">4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+        </table>
+    </div>
+    <div class="tags">
+        <span>Tags</span><br/>
+        <div class="tag">
+            <span class="lg">JavaScript</span>&nbsp;&nbsp;<span class="md-l">CSS</span>&nbsp;&nbsp;<span CLASS="sm">flex</span><br/>
+            <span class="md">webGL</span>&nbsp;&nbsp;<span class="lg">HTML</span>&nbsp;&nbsp;<span class="md">Canvas</span><br/>
+            <span class="md">prototype</span>&nbsp;<span class="md-l">HTML5</span>&nbsp;&nbsp;<span class="sm">grid</span>&nbsp;<span class="md">nodeJS</span><br/>
+            <span class="md">CSS3</span>&nbsp;&nbsp;<span class="md-l">jQuery ECharts</span>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="footer">
+    <ul>
+        <li class="liline"><a href="index.html">首页</a></li>
+        <li class="liline"><a href="article.html">文章</a></li>
+        <li class="liline"><a href="works.html">作品</a></li>
+        <li class="liline"><a href="about.html">关于</a></li>
+    </ul>
+    <hr size="1px">
+    <div>
+        <ul>
+            <li class="lilineb">
+                <ul>
+                    <li class="first">学习资料</li>
+                    <li><a href="#">css 高级教程</a></li>
+                    <li>JavaScript 学习</li>
+                    <li>Node.js 高级应用</li>
+                    <li>Html 手册</li>
+                    <li>Java Web 完全解析</li>
+                </ul>
+            </li>
+            <li class="lilineb">
+                <ul>
+                    <li class="first">学习资料</li>
+                    <li>Css 高级教程</li>
+                    <li>JavaScript 学习</li>
+                    <li>Node.js 高级应用</li>
+                    <li>Html 手册</li>
+                    <li>Java Web 完全解析</li>
+                </ul>
+            </li>
+            <li class="lilineb">
+                <ul>
+                    <li class="first">学习资料</li>
+                    <li>Css 高级教程</li>
+                    <li>JavaScript 学习</li>
+                    <li>Node.js 高级应用</li>
+                    <li>Html 手册</li>
+                    <li>Java Web 完全解析</li>
+                </ul>
+            </li>
+            <li class="lilineb">
+                <ul>
+                    <li class="first">友情链接</li>
+                    <li>W3C school</li>
+                    <li>黑岩阅读</li>
+                    <li>Q点</li>
+                    <li>爱乐窝手游</li>
+                    <li>嘻哈中文网</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <p>版权信息</p>
+    <img src="img/icon-github.png" class="footer-github">
+</div>
+</body>
+</html>
